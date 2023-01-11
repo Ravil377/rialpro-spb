@@ -330,3 +330,464 @@
         grid-template-columns: repeat(auto-fit, 100px);
     }
 }
+
+header.header {
+    padding: 0;
+    color: #000000;
+    font-family: 'Avanti';
+}
+nav.header__top {
+    background: #ECEEF0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav.header__top ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    column-gap: 20px;
+    margin-bottom: 0;
+}
+nav.header__top ul li:last-child {
+    margin-left: auto;
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+}
+nav.header__top ul li a {
+    font-size: 13px;
+    line-height: 15px;
+    color: #273A52;
+    font-family: 'Avanti';
+    font-weight: bold;
+}
+nav.header__top ul li:last-child a svg {
+    min-width: 18px;
+    height: 18px;
+}
+
+.header__center-container {
+    padding-top: 9px;
+    padding-bottom: 20px;
+    display: flex;
+    column-gap: 20px;
+}
+.header__center-container > div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    width: 100%;
+}
+.header__center-container a.logo {
+    width: 113px;
+    height: 98px;
+    display: block;
+}
+.header__center-container a.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.form__search {
+    position: relative;
+}
+.form__search > input {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #273A52;
+    padding: 10px 24px 10px;
+    border: 1px solid #C3C8CE;
+    border-radius: 80px;
+}
+.header__center form > p {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #717880;
+    text-align: center;
+    margin: 0;
+    margin-top: 6px;
+}
+.header__center-container p.address {
+    max-width: 250px;
+    position: relative;
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Avanti';
+    font-weight: bold;
+}
+.header__center-container p.address > span {
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #717880;
+}
+.header__center-container p.address a {
+    font-weight: 450;
+    font-size: 12px;
+    line-height: 15px;
+    color: #273A52;
+    margin-left: 5px;
+    position: relative;
+    text-decoration: none;
+    transition: .4s ease-out;
+}
+.header__center-container p.address a:hover {
+    color: #E51A4B;
+}
+
+.header__center-container .social p:first-child {
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Avanti';
+    font-weight: bold;
+}
+.header__center-container .social p:last-child {
+    color: #717880;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 5px;
+    font-family: 'Avanti';
+}
+.header__center-container .social div {
+    display: flex;
+    column-gap: 12px;
+}
+.header__center-container .social div a {
+    width: 22px;
+    height: 22px;
+}
+.header__center-container .social div a:hover svg {
+    fill: #E51A4B;
+}
+.header__center-container .social div a svg {
+    fill: #003E6E;
+    transition: .4s ease-out;
+}
+.header__center-container .contact p svg, 
+.menu__dropdown-content .contact p svg {
+    width: 20px;
+    height: 20px;
+}
+.header__center-container .contact p:first-child,
+.menu__dropdown-content .contact p:first-child {
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    font-family: 'Avanti';
+    font-weight: bold;
+}
+.header__center-container .contact > a:not(.callback),
+.menu__dropdown-content .contact > a:not(.callback) {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    text-decoration: none;
+    transition: .4s ease-out;
+}
+.header__center-container .contact > a:not(.callback):hover,
+.menu__dropdown-content .contact > a:not(.callback):hover {
+    color: #E51A4B;
+}
+.header__center-container .contact > a.callback,
+.menu__dropdown-content .contact > a.callback {
+    display: block;
+    margin-top: 3px;
+    font-weight: 450;
+    font-size: 12px;
+    line-height: 15px;
+    color: #273A52;
+    position: relative;
+    transition: .4s ease-out;
+    text-decoration: none;
+    width: fit-content;
+    font-weight: 600;
+}
+.header__center-container .contact > a.callback:hover,
+.menu__dropdown-content .contact > a.callback:hover  {
+    color: #E51A4B;
+}
+.header__center-container .contact > a.callback::after,
+.menu__dropdown-content .contact > a.callback::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background: #D5DDE6;
+}
+
+.header__center-container p.address a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background: #D5DDE6;
+    transition: .4s ease-out;
+}
+.header__center-container p.address svg {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    min-width: 15px;
+    height: 17.5px;
+}
+
+
+.form__search-btn {
+    width: 16px;
+    height: 16px;
+    outline: none;
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.form__search-btn label {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.form__search-btn label svg {
+    fill: #003E6E;
+    transition: .4s ease-out;
+}
+.form__search-btn input {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: unset;
+    border: unset;
+    outline: none;
+}
+
+.form__search-btn:hover label svg {
+    fill: #E51A4B;
+}
+.header__center-container .cart {
+    margin: auto 0;
+}
+.header__center-container .cart a > p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    font-family: 'Avanti';
+}
+.header__center-container .cart a {
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+    color: #000000;
+    transition: .4s ease-out;
+    text-decoration: none;
+}
+.header__center-container .cart a:hover {
+    color: #E51A4B;
+}
+.header__center-container .cart a:hover > div svg {
+    fill: #E51A4B;
+}
+.header__center-container .cart a:hover > div p {
+    background: #003E6E;
+}
+.header__center-container .cart a > div {
+    position: relative;
+}
+.header__center-container .cart a > div > p {
+    position: absolute;
+    min-width: 17.5px;
+    background: #E51A4B;
+    height: 17.5px;
+    border-radius: 50%;
+    color: white;
+    top: -6px;
+    right: -6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 16px;
+    color: #FFFFFF;
+    transition: .4s ease-out;
+}
+.header__center-container .cart a > div svg {
+    width: 26px;
+    height: 26px;
+    fill: #003E6E;
+    transition: .4s ease-out;
+}
+.header__bottom {
+    background: #254C7C;
+}
+.header__bottom ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 16px;
+    margin-bottom: 0;
+}
+.header__bottom ul li {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    font-family: 'Avanti';
+    cursor: pointer;
+}
+.header__bottom ul li a { color: white;}
+.header__bottom ul li:last-child a { color: #FF5A82; display: flex; align-items: center; column-gap: 7px;}
+.header__center {
+    background: white;
+}
+header {
+    z-index: 100;
+    position: relative;
+}
+.header__bottom ul::after, .header__bottom ul::before, .header__top ul::after, .header__top ul::before {
+    display: none;
+}
+.menu__dropdown {
+    transform: translateY(-100%);
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    font-family: 'Avanti';
+    transition: .4s ease-out;
+}
+.menu__dropdown._active {
+    transform: translateY(0);
+    /* z-index: 1; */
+}
+.menu__dropdown nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    border-right: 1px solid #E5EAEF;
+}
+
+.menu__dropdown > div.menu__dropdown-content-container > div.container {
+    display: grid;
+    grid-template-columns: 458px 1fr;
+}
+.menu__dropdown > div.menu__dropdown-content-container {
+    background: white;
+
+}
+.menu__dropdown > div.menu__dropdown-content-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 100%;
+    height: 141px;
+    z-index: -1;
+    background: rgba(9, 20, 29, 0.2);
+    filter: blur(25px);
+}
+.menu__dropdown > div.menu__dropdown-content-container > div.container::before,
+.menu__dropdown > div.menu__dropdown-content-container > div.container::after {
+    display: none;
+}
+.menu__dropdown > div.menu__dropdown-content-container > div.container > div {
+    width: 100%;
+}
+.menu__dropdown > div.menu__dropdown-content-container > div.container > nav {
+    padding-right: 40px;
+}
+.menu__dropdown > div.menu__dropdown-content-container > div.container > nav button {
+    border: none;
+    outline: none;
+    background: unset;
+    text-align: left;
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+    padding: 15px 0;
+    position: relative;
+    padding-left: 40px;
+    font-family: 'Avanti';
+    font-weight: 600;
+    transition: .4s ease-out;
+}
+.menu__dropdown > div.menu__dropdown-content-container > div.container > nav button:hover {
+    color: #E51A4B;
+}
+.menu__dropdown > div.menu__dropdown-content-container > div.container > nav button svg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+}
+.menu__dropdown > div.menu__dropdown-content > p {
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 220%;
+    color: #313131;
+}
+div.menu__dropdown-content {
+    padding-top: 33px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+div.menu__dropdown-content > div {
+    margin-top: auto;
+    padding-top: 35px;
+    position: relative;
+    padding-left: 75px;
+}
+.menu__dropdown-content > ul {
+    padding-left: 75px;
+    list-style: none;
+    margin: 0;
+    padding-bottom: 35px;
+}
+.menu__dropdown-content > ul > li {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 220%;
+}
+.menu__dropdown-content > ul > li a {
+    color: #313131;
+    transition: .4s ease-out;
+    text-decoration: none;
+}
+.menu__dropdown-content > ul > li a:hover {
+    color: #E51A4B;
+}
+div.menu__dropdown-content > div::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 1px;
+    background: #E5EAEF;
+}
+body {
+    /* overflow: auto; */
+    /* overflow-y: hidden !important; */
+}
+body._fixed {
+    height: 100vh;
+    overflow: hidden;
+}
