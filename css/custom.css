@@ -1,0 +1,223 @@
+.s-message{display:none !important;}
+.tabcontent .shk_count_button {
+    display: none;
+}
+details {
+    text-align: center;
+}
+details[open] summary {
+    display: none;
+}
+summary {
+    font-size: 1.4rem;
+    padding: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+/* Style the tab */
+.tab {
+    overflow: initial;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: contents;
+}
+.tab button img {
+    height: 55px;
+}
+.cat__color p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #465965;
+    margin: 0;
+    margin-top: 9px;
+    text-align: center;
+}
+.cat__form-item .cat__item-img {
+    width: 100%;
+    height: 172px;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 20px;
+}
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    border: none;
+}
+.scale {
+    transition: 1s;
+}
+.scale:hover {
+    transform: scale(1.6);
+}
+.cat__colors-list ul {
+    justify-content: initial;
+}
+.price p {
+    font-size: 1.6rem;
+    color: #003a70;
+    font-weight: 700;
+}
+@media (min-width: 576px) {
+    .cat__main-links.tablinks {
+        gap: 80px;
+    }
+}
+@media (min-width: 992px) {
+.subcat  .col-md-3.compl {
+    width: 23%;
+    margin: 1rem;
+    font-size: 16px;
+    line-height: 120%;
+    padding: 20px;
+    min-height: 100px;
+}
+}
+.compl {
+/*    font-size: 28px;
+    background: none;
+    border: none;
+    color: #06446F;
+    text-align: left;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    line-height: 5rem;
+*/
+    min-height: 60px;
+    border: 1px solid #678EAA;
+    border-radius: 8px;
+    font-family: 'Avanti';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #06446F;
+    background: transparent;
+    text-transform: none !important;
+    max-width: 580px;
+}
+.compl:hover {
+    color: #E51A4B;
+}
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: 0;
+    outline-color: transparent;
+    outline-width: 0;
+    outline-style: none;
+    box-shadow: 0 0 0 0 rgba(0,123,255,0);
+} 
+.header__cart:hover p {
+    color: #E51A4B;
+}
+@media (min-width: 1230px) {
+    p.address {
+        max-width: 270px;
+    }
+}
+.pager span {
+    background: #E51A4B;
+}
+.calcs-new {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 25px;
+}
+.calc-new {
+    background: #F3F5F7;
+    border-radius: 10px;
+    padding: 25px 36px;
+    display: grid;
+    grid-template-columns: 115px 1fr;
+    column-gap: 36px;
+    min-height: 213px;
+    transition: .4s ease-out;
+    border: 2px solid #F3F5F7;
+}
+.calc-new:hover {
+    background: #FFFFFF;
+    border: 2px solid #E8EEF5;
+
+}
+.calc-new img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.calc-new div p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    color: #93989E;
+}
+.calc-new div h2 {
+    font-weight: 550;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+    margin-bottom: 22px;
+}
+
+.calc-new div a.card__btn {
+    min-width: 149px;
+    display: block;
+}
+.calc-new div a.card__btn:hover {
+    background: #E51A4B;
+    color: white;
+    border-color:#E51A4B;
+}
+.subcat .compl {
+    font-size: 15px;
+    line-height: 2.6rem;
+    text-underline-offset: 3px;
+    text-align: center;
+}
+.subtabcontent {
+    font-size: 3rem;
+}
+.seotext {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.catalog__list-item .item p {
+    padding: 2px 30px;
+    font-size: 22px;
+}
+@media (max-width: 576px) {
+    .madal_page .madal_content, .madal_page {
+        max-width: 90%;
+    }
+    .close_madal {
+        right: 60px;
+    }
+}
+.header__center-container .contact > a:not(.callback) p {
+    margin-bottom: 0;
+}
+@media (max-width: 1230px) {
+    .dn {
+        display: none !important;
+    }
+}
