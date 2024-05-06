@@ -756,3 +756,25 @@ text-align: left;
         transform: translateY(-100vh);
     }
 }
+
+._copyright {
+    padding-top: 48px;
+    padding-bottom: 15px;
+    font-family: Proxima Nova;
+font-size: 14px;
+font-weight: 400;
+line-height: 15.4px;
+letter-spacing: -0.02em;
+text-align: left;
+color: #818283;
+}
+._conf a {
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #003E6E;    
+    text-decoration: underline;
+}
