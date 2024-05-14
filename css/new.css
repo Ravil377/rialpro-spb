@@ -432,12 +432,16 @@
     margin: unset;
     margin-bottom: 40px;
     font-family: Proxima Nova;
-font-size: 40px;
+font-size: 30px;
 font-weight: 600;
-line-height: 36px;
 letter-spacing: -0.02em;
 text-align: left;
 
+}
+@media (min-width: 768px) {
+    ._new-sales h2 {
+        font-size: 40px;
+    }
 }
 ._new-sales .slick-slide {
     padding: 0 2px;
@@ -777,4 +781,120 @@ color: #818283;
     text-align: left;
     color: #003E6E;    
     text-decoration: underline;
+}
+
+.catalog-new {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.catalog-new h2 {
+    font-size: 40px;
+}
+@media (min-width: 992px) {
+    .catalog-new {
+        padding-top: 50px;
+        padding-bottom: 96px;
+    }
+}
+.catalog-new ul {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* row-gap: 30px; */
+    list-style: none;
+    margin: unset;
+    padding: unset;
+    margin-top: 30px;
+    /* row-gap: 5px; */
+}
+.catalog-new h2 {
+    font-size: 30px;
+}
+@media (min-width: 768px) {
+    .catalog-new h2 {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1240px) {
+    .catalog-new ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.catalog-new ul li a {
+    min-height: 200px;
+    border: 1px solid #E0E7EC;
+    display: flex;
+    flex-direction: column;
+    padding: 13px 13px 22px;
+    height: 100%;
+    position: relative;
+    color: #000000;
+}
+@media (min-width: 1240px) {
+    .catalog-new ul li a {
+        min-height: 232px;
+        padding: 64px 38px 37px;
+        padding-right: 45px !important;
+    }
+}
+.catalog-new ul li a > img {
+    max-height: 52px;
+    object-fit: contain;
+    object-position: right;
+}
+.catalog-new ul li a > p {
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin: unset;
+    margin-bottom: 23px;
+}
+
+.catalog-new ul li a > span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+    font-family: Proxima Nova;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #889099;
+    
+}
+.catalog-new ul li a > span img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+@media (min-width: 1240px) {
+    .catalog-new ul li a > span {
+        font-size: 16px;
+        line-height: 17.6px;
+
+    }
+    .catalog-new ul li a > img { 
+        max-height: 90px;
+        z-index: -1;
+        
+        object-position: right;
+        position: absolute;
+        right: 0;
+        top: 16px;
+        width: 97px;
+    }
+    .catalog-new ul li a {
+        padding: 64px 38px 37px;
+    }
+    .catalog-new ul li a > p {
+        font-size: 24px;
+        line-height: 26.4px;
+    }
 }
